@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+	<ConfigParamParent>
+	
+	
+		<!-- 源数据库 -->
+		<ConfigItem>
+			<ConfigName>SOURCEDATABASE</ConfigName>
+			<ConfigParam>
+				<ParamName>databaseURL</ParamName>
+				<ParamValue>jdbc:oracle:thin:@10.45.4.228:1521:ccbdevdb</ParamValue>
+			</ConfigParam>
+			<ConfigParam>
+				<ParamName>userName</ParamName>
+				<ParamValue>daily</ParamValue>
+			</ConfigParam>
+			<ConfigParam>
+				<ParamName>password</ParamName>
+				<ParamValue>daily</ParamValue>
+			</ConfigParam>
+			<ConfigParam>
+				<ParamName>DriverClass</ParamName>
+				<ParamValue>oracle.jdbc.driver.OracleDriver</ParamValue>
+			</ConfigParam>
+		</ConfigItem>
+		
+		<!-- 目标数据库 -->
+		<ConfigItem>
+			<ConfigName>DESDATABASE</ConfigName>
+			<ConfigParam>
+				<ParamName>databaseURL</ParamName>
+				<ParamValue>jdbc:mysql://10.45.4.168:3306/zcip?rewriteBatchedStatements=true</ParamValue>
+			</ConfigParam>
+			<ConfigParam>
+				<ParamName>userName</ParamName>
+				<ParamValue>root</ParamValue>
+			</ConfigParam>
+			<ConfigParam>
+				<ParamName>password</ParamName>
+				<ParamValue>zcip</ParamValue>
+			</ConfigParam>
+			<ConfigParam>
+				<ParamName>DriverClass</ParamName>
+				<ParamValue>com.mysql.jdbc.Driver</ParamValue>
+			</ConfigParam>
+		</ConfigItem>
+		
+		<!-- 此配置用来表示如果用户输入的参数是ALLTABLES时，用来获取当前用户下所有的表名 -->
+		<ConfigItem>
+			<ConfigParam>
+				<ParamName>SOURCEDATATYPE</ParamName>
+				<ParamValue>ORACLE</ParamValue>
+			</ConfigParam>
+		</ConfigItem>
+		
+		
+		<!-- 是否删除目标数据库表中原来存在的记录，true 是， false为否 -->
+		<ConfigItem>
+			<ConfigParam>
+				<ParamName>ISDelDestTableRecords</ParamName>
+				<ParamValue>false</ParamValue>
+			</ConfigParam>
+		</ConfigItem>
+		
+	</ConfigParamParent>
+</web-app>

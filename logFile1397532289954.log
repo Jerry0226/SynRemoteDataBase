@@ -1,0 +1,139 @@
+table: CHECK_DETAIL sumCount： 87601 , begin syn data...
+table: CHECK_DETAIL duration： 0.966 s
+Thread[Thread-2,5,main] beginSynData from 0 to 20000 rows
+select * from ( 
+select tt.*,rownum as rwn from ( 
+select * from CHECK_DETAIL 
+) tt where rownum <= 10000) t where t.rwn > 0
+Thread[Thread-3,5,main] beginSynData from 20000 to 40000 rows
+select * from ( 
+select tt.*,rownum as rwn from ( 
+select * from CHECK_DETAIL 
+) tt where rownum <= 30000) t where t.rwn > 20000
+Thread[Thread-5,5,main] beginSynData from 60000 to 80000 rows
+select * from ( 
+select tt.*,rownum as rwn from ( 
+select * from CHECK_DETAIL 
+) tt where rownum <= 70000) t where t.rwn > 60000
+Thread[Thread-4,5,main] beginSynData from 40000 to 60000 rows
+select * from ( 
+select tt.*,rownum as rwn from ( 
+select * from CHECK_DETAIL 
+) tt where rownum <= 50000) t where t.rwn > 40000
+Thread[Thread-6,5,main] beginSynData from 80000 to 87601 rows
+select * from ( 
+select tt.*,rownum as rwn from ( 
+select * from CHECK_DETAIL 
+) tt where rownum <= 87601) t where t.rwn > 80000
+INFO  Table CHECK_DETAIL: 1000 rows affected
+INFO  Table CHECK_DETAIL: 21000 rows affected
+INFO  Table CHECK_DETAIL: 41000 rows affected
+INFO  Table CHECK_DETAIL: 61000 rows affected
+INFO  Table CHECK_DETAIL: 81000 rows affected
+INFO  Table CHECK_DETAIL: 2000 rows affected
+INFO  Table CHECK_DETAIL: 22000 rows affected
+INFO  Table CHECK_DETAIL: 42000 rows affected
+INFO  Table CHECK_DETAIL: 82000 rows affected
+INFO  Table CHECK_DETAIL: 62000 rows affected
+INFO  Table CHECK_DETAIL: 23000 rows affected
+INFO  Table CHECK_DETAIL: 43000 rows affected
+INFO  Table CHECK_DETAIL: 63000 rows affected
+INFO  Table CHECK_DETAIL: 3000 rows affected
+INFO  Table CHECK_DETAIL: 83000 rows affected
+INFO  Table CHECK_DETAIL: 24000 rows affected
+INFO  Table CHECK_DETAIL: 44000 rows affected
+INFO  Table CHECK_DETAIL: 64000 rows affected
+INFO  Table CHECK_DETAIL: 4000 rows affected
+INFO  Table CHECK_DETAIL: 84000 rows affected
+INFO  Table CHECK_DETAIL: 25000 rows affected
+INFO  Table CHECK_DETAIL: 45000 rows affected
+INFO  Table CHECK_DETAIL: 65000 rows affected
+INFO  Table CHECK_DETAIL: 85000 rows affected
+INFO  Table CHECK_DETAIL: 5000 rows affected
+INFO  Table CHECK_DETAIL: 26000 rows affected
+INFO  Table CHECK_DETAIL: 46000 rows affected
+INFO  Table CHECK_DETAIL: 66000 rows affected
+INFO  Table CHECK_DETAIL: 86000 rows affected
+INFO  Table CHECK_DETAIL: 6000 rows affected
+INFO  Table CHECK_DETAIL: 27000 rows affected
+INFO  Table CHECK_DETAIL: 47000 rows affected
+INFO  Table CHECK_DETAIL: 67000 rows affected
+INFO  Table CHECK_DETAIL: 87000 rows affected
+INFO  Table CHECK_DETAIL: 28000 rows affected
+INFO  Table CHECK_DETAIL: 7000 rows affected
+INFO  Table CHECK_DETAIL: 87601 rows affected
+INFO  Table CHECK_DETAIL: 48000 rows affected
+INFO  Table CHECK_DETAIL: 68000 rows affected
+INFO  Table CHECK_DETAIL: 29000 rows affected
+INFO  Table CHECK_DETAIL: 8000 rows affected
+INFO  Table CHECK_DETAIL: 49000 rows affected
+INFO  Table CHECK_DETAIL: 69000 rows affected
+INFO  Table CHECK_DETAIL: 30000 rows affected
+INFO  Table CHECK_DETAIL: 30000 rows affected
+select * from ( 
+select tt.*,rownum as rwn from ( 
+select * from CHECK_DETAIL 
+) tt where rownum <= 40000) t where t.rwn > 30000
+INFO  Table CHECK_DETAIL: 9000 rows affected
+INFO  Table CHECK_DETAIL: 50000 rows affected
+INFO  Table CHECK_DETAIL: 50000 rows affected
+select * from ( 
+select tt.*,rownum as rwn from ( 
+select * from CHECK_DETAIL 
+) tt where rownum <= 60000) t where t.rwn > 50000
+INFO  Table CHECK_DETAIL: 70000 rows affected
+INFO  Table CHECK_DETAIL: 70000 rows affected
+select * from ( 
+select tt.*,rownum as rwn from ( 
+select * from CHECK_DETAIL 
+) tt where rownum <= 80000) t where t.rwn > 70000
+INFO  Table CHECK_DETAIL: 10000 rows affected
+INFO  Table CHECK_DETAIL: 10000 rows affected
+select * from ( 
+select tt.*,rownum as rwn from ( 
+select * from CHECK_DETAIL 
+) tt where rownum <= 20000) t where t.rwn > 10000
+INFO  Table CHECK_DETAIL: 31000 rows affected
+INFO  Table CHECK_DETAIL: 51000 rows affected
+INFO  Table CHECK_DETAIL: 71000 rows affected
+INFO  Table CHECK_DETAIL: 11000 rows affected
+INFO  Table CHECK_DETAIL: 32000 rows affected
+INFO  Table CHECK_DETAIL: 52000 rows affected
+INFO  Table CHECK_DETAIL: 72000 rows affected
+INFO  Table CHECK_DETAIL: 12000 rows affected
+INFO  Table CHECK_DETAIL: 33000 rows affected
+INFO  Table CHECK_DETAIL: 53000 rows affected
+INFO  Table CHECK_DETAIL: 73000 rows affected
+INFO  Table CHECK_DETAIL: 13000 rows affected
+INFO  Table CHECK_DETAIL: 34000 rows affected
+INFO  Table CHECK_DETAIL: 54000 rows affected
+INFO  Table CHECK_DETAIL: 74000 rows affected
+INFO  Table CHECK_DETAIL: 14000 rows affected
+INFO  Table CHECK_DETAIL: 35000 rows affected
+INFO  Table CHECK_DETAIL: 55000 rows affected
+INFO  Table CHECK_DETAIL: 75000 rows affected
+INFO  Table CHECK_DETAIL: 15000 rows affected
+INFO  Table CHECK_DETAIL: 36000 rows affected
+INFO  Table CHECK_DETAIL: 56000 rows affected
+INFO  Table CHECK_DETAIL: 76000 rows affected
+INFO  Table CHECK_DETAIL: 16000 rows affected
+INFO  Table CHECK_DETAIL: 37000 rows affected
+INFO  Table CHECK_DETAIL: 57000 rows affected
+INFO  Table CHECK_DETAIL: 77000 rows affected
+INFO  Table CHECK_DETAIL: 17000 rows affected
+INFO  Table CHECK_DETAIL: 38000 rows affected
+INFO  Table CHECK_DETAIL: 58000 rows affected
+INFO  Table CHECK_DETAIL: 78000 rows affected
+INFO  Table CHECK_DETAIL: 18000 rows affected
+INFO  Table CHECK_DETAIL: 39000 rows affected
+INFO  Table CHECK_DETAIL: 59000 rows affected
+INFO  Table CHECK_DETAIL: 79000 rows affected
+INFO  Table CHECK_DETAIL: 19000 rows affected
+INFO  Table CHECK_DETAIL: 40000 rows affected
+INFO  Table CHECK_DETAIL: 40000 rows affected
+INFO  Table CHECK_DETAIL: 60000 rows affected
+INFO  Table CHECK_DETAIL: 60000 rows affected
+INFO  Table CHECK_DETAIL: 80000 rows affected
+INFO  Table CHECK_DETAIL: 80000 rows affected
+INFO  Table CHECK_DETAIL: 20000 rows affected
+INFO  Table CHECK_DETAIL: 20000 rows affected

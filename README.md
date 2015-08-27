@@ -1,5 +1,6 @@
 # SynRemoteDataBase
 为解决 timesten 不同版本间的数据同步问题，进而也提供了对mysql以及oracle的支持，仅同步数据，数据模型等数据对象不提供同步
+以及相同数据模型不同数据库间的同步问题
 
  	 * args[0] 配置文件config.xml的路径
 	 * args[1] 需要同步的表名，如果同步此用户下的所有的表记录，输入：ALLTABLES，如果是其他名称则只同步给定的表名，表名之间用逗号分割，如：doc,role
