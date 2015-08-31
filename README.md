@@ -7,7 +7,7 @@
 	 * args[2] 启动的同步线程个数，任务分配不精细到记录数来分配任务线程，直接根据表的个数来分配
 	 * args[3] 单表单个线程最大的导入记录数，当单表的记录超过此值时，将启动多个线程进行操作，默认为100000
 	 
-内置了部分版本的oracle、mysql以及timesten 驱动
+内置了部分版本的oracle、mysql以及timesten 驱动，java -jar SynRemoteDataBase.jar f:/config.xml users,roles 20 30000
 
 代码是很早之前写的很乱，欢迎大家优化
 
